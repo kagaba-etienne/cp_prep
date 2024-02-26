@@ -1,49 +1,68 @@
 # include <iostream>
-# include <vector>
-# include <unordered_map>
+# include <map>
 
 using namespace std;
 
-bool check_configuration(unordered_multimap<long long, long long>& heights, unordered_multimap<long long, long long>& widths, long long& h, long long& w) {
-    if (heights.empty()) {
+void stabilize_indices(map<long long, map<long long, int>>& h_idx, map<long long, map<long long, int>>& w_idx, long long& h, long long& w) {
+    auto it = h_idx.find(h);
+    auto elem = it->second.begin();
+    w -= elem->first;
+    elem->second -= 1;
+
+    auto it2 = w_idx.find(elem->first);
+    auto elem2 = it2->second.find(h);
+    elem2->second -= 1;
+
+//   Remove w_h item if times are less than 1
+    if (elem2->second < 1) {
+        it2->second.erase(elem2);
+    } else {
+        it2->second[h] = elem2->second;
+    }
+
+//  Remove w if it is empty
+    if (it2->second.empty()) {
+        w_idx.erase(it2);
+    } else {
+        w_idx[elem->first] = it2->second;
+    }
+
+//  Remove h_w item if times are less than 1
+    if (elem->second < 1) {
+        it->second.erase(elem);
+    } else {
+        it->second[elem->first] = elem->second;
+    }
+
+
+//  Remove h if it is empty
+    if (it->second.empty()) {
+        h_idx.erase(it);
+    } else {
+        h_idx[h] = it->second;
+    }
+}
+
+
+bool check_configuration(map<long long, map<long long, int>>& h_idx, map<long long, map<long long, int>>& w_idx, long long& h, long long& w) {
+    if (h_idx.empty()) {
         return true;
     }
 
-    if (h < 0 || w < 0) {
-        return false;
+    auto it = h_idx.find(h);
+    if (it != h_idx.end()) {
+        stabilize_indices(h_idx, w_idx, h, w);
+        return check_configuration(h_idx, w_idx, h, w);
+    }
+    auto it3 = w_idx.find(w);
+    if (it3 != w_idx.end()) {
+        stabilize_indices(w_idx, h_idx, w, h);
+        return check_configuration(h_idx, w_idx, h, w);
     }
 
-    auto it = heights.find(h);
-    if (it != heights.end()) {
-        auto range = widths.equal_range(it->second);
-
-        for (auto e = range.first; e != range.second; e++) {
-            if (e->second == it->first) {
-                widths.erase(e);
-                break;
-            }
-        }
-        w -= it->second;
-        heights.erase(it);
-        return check_configuration(heights, widths, h, w);
-    }
-
-    auto it1 = widths.find(w);
-    if (it1 != widths.end()) {
-        auto range = heights.equal_range(it1->second);
-
-        for (auto e = range.first; e != range.second; e++) {
-            if (e->second == it1->first) {
-                heights.erase(e);
-                break;
-            }
-        }
-        h -= it1->second;
-        widths.erase(it1);
-        return check_configuration(heights, widths, h, w);
-    }
     return false;
 }
+
 
 int main() {
     int t;
@@ -52,117 +71,70 @@ int main() {
         int n;
         cin >> n;
 
-        unordered_multimap<long long, long long> hs(n);
-        unordered_multimap<long long, long long> ws(n);
+        map<long long, map<long long, int>> h_index;
+        map<long long, map<long long, int>> w_index;
         long long int area;
         long long h, w;
         area = 0;
         h = 0;
         w = 0;
-
+//        Reading [h, w]'s
         for (int k = 0; k < n; k++) {
             long long s,v;
             cin >> s;
             cin >> v;
 
-            hs.insert({s, v});
-            ws.insert({v, s});
+            auto h_dup = h_index.find(s);
+            if (h_dup != h_index.end()) {
+                auto h_w_dup = h_dup->second.find(v);
+                if (h_w_dup != h_dup->second.end()) {
+                    h_dup->second[v] += 1;
+                } else {
+                    h_dup->second[v] = 1;
+                }
+                h_index[s] = h_dup->second;
+            } else {
+                h_index[s].insert({v, 1});
+            }
+
+            auto w_dup = w_index.find(v);
+            if (w_dup != w_index.end()) {
+                auto w_h_dup = w_dup->second.find(s);
+                if (w_h_dup != w_dup->second.end()) {
+                    w_dup->second[s] += 1;
+                } else {
+                    w_dup->second[s] = 1;
+                }
+                w_index[v] = w_dup->second;
+            } else {
+                w_index[v].insert({s, 1});
+            }
 
             area += static_cast<long long int>(s) * v;
             if (s > h) h = s;
             if (v > w) w = v;
         }
-        if (t==1 && n == 100977) {
-            cout<<"1\n999908 999836"<<endl;
-            continue;
-        } else if (t==1 && n == 200000 && area == 200000000000000000) {
-            cout<<"2\n"
-                  "1000000 200000000000\n"
-                  "200000000000 1000000"<<endl;
-            continue;
-        } else if (t==1 && n == 200000 && area == 40001200009) {
-            cout<<"1\n"
-                  "200003 200003"<<endl;
-            continue;
-        } else if (t==1 && n == 200000) {
-            cout<<"2\n"
-                  "1000000 142454000000\n"
-                  "142454000000 1000000"<<endl;
-            continue;
-        } else if (t==2 && n == 150525) {
-            cout<<"2\n"
-                  "1000000 148621000000\n"
-                  "148621000000 1000000"<<endl;
-            continue;
-        } else if (t==5 && n == 43752) {
-            cout<<"2\n"
-                  "893254 1791468\n"
-                  "1786508 895734\n"
-                  "1\n"
-                  "997910 999719\n"
-                  "2\n"
-                  "618930 1251964\n"
-                  "1237860 625982\n"
-                  "1\n"
-                  "999792 999850\n"
-                  "2\n"
-                  "985335 1971584\n"
-                  "1970670 985792\n";
-            return 0;
-        } else if (t==3 && n == 34496) {
-            cout<<"2\n"
-                  "1000000 32618000000\n"
-                  "32618000000 1000000\n"
-                  "1\n"
-                  "921935 919877\n"
-                  "2\n"
-                  "1000000 117709000000\n"
-                  "117709000000 1000000\n";
-            return 0;
-        } else if (t==10 && n == 74639) {
-            cout<<"2\n"
-                  "981431 1962602\n"
-                  "1962862 981301\n"
-                  "1\n"
-                  "999493 998782\n"
-                  "2\n"
-                  "501311 997420\n"
-                  "1002622 498710\n"
-                  "1\n"
-                  "999432 999920\n"
-                  "2\n"
-                  "609909 1196648\n"
-                  "1219818 598324\n"
-                  "1\n"
-                  "999757 998346\n"
-                  "2\n"
-                  "440446 879538\n"
-                  "880892 439769\n"
-                  "1\n"
-                  "999000 999759\n"
-                  "2\n"
-                  "774414 1535082\n"
-                  "1548828 767541\n"
-                  "1\n"
-                  "998387 999591\n";
-            return 0;
-        } else {}
 
-        unordered_multimap<long long, long long> hs_copy = hs;
-        unordered_multimap<long long, long long> ws_copy = ws;
-        long long h_copy = area / w;
-        long long w_copy = area / h;
-        unordered_map<long long, long long> solutions;
+        map<long long, map<long long, int>> h_index_copy = h_index;
+        map<long long, map<long long, int>> w_index_copy = w_index;
+        long long h_copy = (area % w == 0)? area / w : 0;
+        long long w_copy = (area % h == 0)? area / h : 0;
+        map<long long, long long> solutions;
         long long h_og = h;
         long long w_og = area / h;
         long long h1_og = area / w;
         long long w1_og = w;
 
-        if ((area % h == 0) && check_configuration(hs_copy, ws_copy, h, w_copy)) {
+        if ((w_copy != 0) && check_configuration(h_index_copy, w_index_copy, h, w_copy)) {
             solutions[h_og] = w_og;
         }
 
-        if ((area % w == 0) && check_configuration(hs, ws, h_copy, w)) {
+        if (solutions.empty()) {
+            cout << 1 << endl <<h_copy <<" " << w << endl;
+            continue;
+        }
+
+        if ((h_copy != 0) && check_configuration(h_index, w_index, h_copy, w)) {
             solutions[h1_og] = w1_og;
         }
 
