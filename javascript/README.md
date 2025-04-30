@@ -1,6 +1,6 @@
-# Python Solutions
+# JavaScript Solutions
 
-This folder contains solutions to competitive programming questions implemented in Python.
+This folder contains solutions to competitive programming questions implemented in JavaScript.
 
 Number of Solutions: 2
 

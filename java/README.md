@@ -1,6 +1,6 @@
-# Python Solutions
+# Java Solutions
 
-This folder contains solutions to competitive programming questions implemented in Python.
+This folder contains solutions to competitive programming questions implemented in Java.
 
 Number of Solutions: 2
 

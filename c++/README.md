@@ -2,6 +2,8 @@
 
 This folder contains solutions to competitive programming questions implemented in C++.
 
+Number of Solutions: 7
+
 ## Problem Statements
 
 1. [1. Two Sum](https://leetcode.com/problems/two-sum/description/)
