@@ -11,7 +11,7 @@ Welcome to the **CP Prep** repository! This repository contains solutions to var
 
 Within each language folder, solutions are further organized into subfolders by their problem name. For example:
 1. `A. Moving Chips/moving_chips.cpp` (for C++)
-2. `A. Moving Chips/moving_chips.java` (for Java)
+2. `A. Moving Chips/MovingChips.java` (for Java)
 3. `A. Moving Chips/moving_chips.js` (for JavaScript)
 4. `A. Moving Chips/moving_chips.py` (for python)
 
