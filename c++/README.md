@@ -2,7 +2,7 @@
 
 This folder contains solutions to competitive programming questions implemented in C++.
 
-Number of Solutions: 11
+Number of Solutions: 14
 
 ## Problem Statements
 
@@ -14,8 +14,11 @@ Number of Solutions: 11
 6. [A - String Task](https://codeforces.com/contest/118/problem/A)
 7. [A - Theatre Square](https://codeforces.com/contest/1/problem/A)
 8. [A. Moving Chips](https://codeforces.com/contest/1923/problem/A)
-9. [B. Monsters Attack!](https://codeforces.com/contest/1923/problem/B)
-10. [B. The Butcher](https://codeforces.com/contest/1819/problem/B)
-11. [B. YetnotherrokenKeoard](https://codeforces.com/contest/1907/problem/B)
+9. [A. Square Year](https://codeforces.com/contest/2114/problem/A)
+10. [B. Monsters Attack!](https://codeforces.com/contest/1923/problem/B)
+11. [B. Not Quite a Palindromic String](https://codeforces.com/contest/2114/problem/B)
+12. [B. The Butcher](https://codeforces.com/contest/1819/problem/B)
+13. [B. YetnotherrokenKeoard](https://codeforces.com/contest/1907/problem/B)
+14. [Wood Cutting](/c++/Planks/planks.cpp)
 
 Feel free to explore the solutions and provide feedback or improvements if you find any!
