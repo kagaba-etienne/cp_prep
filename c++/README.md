@@ -21,5 +21,6 @@ Number of Solutions: 14
 13. [B. YetnotherrokenKeoard](https://codeforces.com/contest/1907/problem/B)
 14. [Wood Cutting](/c++/Planks/planks.cpp)
 15. [Insertion Sort](/c++/Insertion Sort/insertion.cpp)
+16. [Adding Binary Numbers](\c++/Adding Binary Numbers/adding_bin.cpp)
 
 Feel free to explore the solutions and provide feedback or improvements if you find any!
