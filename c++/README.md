@@ -20,5 +20,6 @@ Number of Solutions: 14
 12. [B. The Butcher](https://codeforces.com/contest/1819/problem/B)
 13. [B. YetnotherrokenKeoard](https://codeforces.com/contest/1907/problem/B)
 14. [Wood Cutting](/c++/Planks/planks.cpp)
+15. [Insertion Sort](/c++/Insertion Sort/insertion.cpp)
 
 Feel free to explore the solutions and provide feedback or improvements if you find any!
