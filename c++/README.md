@@ -15,13 +15,13 @@ Number of Solutions: 17
 7. [A - Theatre Square](https://codeforces.com/contest/1/problem/A)
 8. [A. Moving Chips](https://codeforces.com/contest/1923/problem/A)
 9. [A. Square Year](https://codeforces.com/contest/2114/problem/A)
-10. [Adding Binary Numbers](\c++/Adding Binary Numbers/adding_bin.cpp)
+10. [Adding Binary Numbers](/c++/Adding%20Binary%20Numbers/adding_bin.cpp)
 11. [B. Monsters Attack!](https://codeforces.com/contest/1923/problem/B)
 12. [B. Not Quite a Palindromic String](https://codeforces.com/contest/2114/problem/B)
 13. [B. The Butcher](https://codeforces.com/contest/1819/problem/B)
 14. [B. YetnotherrokenKeoard](https://codeforces.com/contest/1907/problem/B)
-15. [Insertion Sort](/c++/Insertion Sort/insertion.cpp)
-16. [Merge Sort](c++/Merge Sort/merge_sort.cpp)
+15. [Insertion Sort](/c++/Insertion%20Sort/insertion.cpp)
+16. [Merge Sort](/c++/Merge%20Sort/merge_sort.cpp)
 17. [Wood Cutting](/c++/Planks/planks.cpp)
 
 Feel free to explore the solutions and provide feedback or improvements if you find any!
