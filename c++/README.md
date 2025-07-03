@@ -2,7 +2,7 @@
 
 This folder contains solutions to competitive programming questions implemented in C++.
 
-Number of Solutions: 22
+Number of Solutions: 23
 
 ## Problem Statements
 
@@ -25,8 +25,9 @@ Number of Solutions: 22
 17. [B. Tournament](https://codeforces.com/contest/2123/problem/B)
 18. [B. YetnotherrokenKeoard](https://codeforces.com/contest/1907/problem/B)
 19. [C. Prefix Min and Suffix Max](https://codeforces.com/contest/2123/problem/C)
-20. [Insertion Sort](/c++/Insertion%20Sort/insertion.cpp)
-21. [Merge Sort](/c++/Merge%20Sort/merge_sort.cpp)
-22. [Wood Cutting](/c++/Planks/planks.cpp)
+20. [Climbing the Grid](/c++/Climbing%20the%20Grid/climbing_grid.cpp)
+21. [Insertion Sort](/c++/Insertion%20Sort/insertion.cpp)
+22. [Merge Sort](/c++/Merge%20Sort/merge_sort.cpp)
+23. [Wood Cutting](/c++/Planks/planks.cpp)
 
 Feel free to explore the solutions and provide feedback or improvements if you find any!
