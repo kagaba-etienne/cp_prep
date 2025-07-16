@@ -2,7 +2,7 @@
 
 This folder contains solutions to competitive programming questions implemented in C++.
 
-Number of Solutions: 23
+Number of Solutions: 26
 
 ## Problem Statements
 
@@ -16,18 +16,21 @@ Number of Solutions: 23
 8. [A - String Task](https://codeforces.com/contest/118/problem/A)
 9. [A - Theatre Square](https://codeforces.com/contest/1/problem/A)
 10. [A. Blackboard Game](https://codeforces.com/contest/2123/problem/A)
-11. [A. Moving Chips](https://codeforces.com/contest/1923/problem/A)
-12. [A. Square Year](https://codeforces.com/contest/2114/problem/A)
-13. [Adding Binary Numbers](/c++/Adding%20Binary%20Numbers/adding_bin.cpp)
-14. [B. Monsters Attack!](https://codeforces.com/contest/1923/problem/B)
-15. [B. Not Quite a Palindromic String](https://codeforces.com/contest/2114/problem/B)
-16. [B. The Butcher](https://codeforces.com/contest/1819/problem/B)
-17. [B. Tournament](https://codeforces.com/contest/2123/problem/B)
-18. [B. YetnotherrokenKeoard](https://codeforces.com/contest/1907/problem/B)
-19. [C. Prefix Min and Suffix Max](https://codeforces.com/contest/2123/problem/C)
-20. [Climbing the Grid](/c++/Climbing%20the%20Grid/climbing_grid.cpp)
-21. [Insertion Sort](/c++/Insertion%20Sort/insertion.cpp)
-22. [Merge Sort](/c++/Merge%20Sort/merge_sort.cpp)
-23. [Wood Cutting](/c++/Planks/planks.cpp)
+11. [A. Deranged Deletions](https://codeforces.com/contest/2124/problem/A)
+12. [A. Moving Chips](https://codeforces.com/contest/1923/problem/A)
+13. [A. Square Year](https://codeforces.com/contest/2114/problem/A)
+14. [Adding Binary Numbers](/c++/Adding%20Binary%20Numbers/adding_bin.cpp)
+15. [B. Minimise Sum](https://codeforces.com/contest/2124/problem/B)
+16. [B. Monsters Attack!](https://codeforces.com/contest/1923/problem/B)
+17. [B. Not Quite a Palindromic String](https://codeforces.com/contest/2114/problem/B)
+18. [B. The Butcher](https://codeforces.com/contest/1819/problem/B)
+19. [B. Tournament](https://codeforces.com/contest/2123/problem/B)
+20. [B. YetnotherrokenKeoard](https://codeforces.com/contest/1907/problem/B)
+21. [C. Prefix Min and Suffix Max](https://codeforces.com/contest/2123/problem/C)
+22. [C. Subset Multiplication](https://codeforces.com/contest/2124/problem/C)
+23. [Climbing the Grid](/c++/Climbing%20the%20Grid/climbing_grid.cpp)
+24. [Insertion Sort](/c++/Insertion%20Sort/insertion.cpp)
+25. [Merge Sort](/c++/Merge%20Sort/merge_sort.cpp)
+26. [Wood Cutting](/c++/Planks/planks.cpp)
 
 Feel free to explore the solutions and provide feedback or improvements if you find any!

@@ -2,3 +2,4 @@ c++/.idea
 python/.idea
 format_readme.py
 .vscode/
+**/test/
