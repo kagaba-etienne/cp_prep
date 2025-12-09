@@ -2,7 +2,7 @@
 
 This folder contains solutions to competitive programming questions implemented in C++.
 
-Number of Solutions: 26
+Number of Solutions: 32
 
 ## Problem Statements
 
@@ -26,11 +26,17 @@ Number of Solutions: 26
 18. [B. The Butcher](https://codeforces.com/contest/1819/problem/B)
 19. [B. Tournament](https://codeforces.com/contest/2123/problem/B)
 20. [B. YetnotherrokenKeoard](https://codeforces.com/contest/1907/problem/B)
-21. [C. Prefix Min and Suffix Max](https://codeforces.com/contest/2123/problem/C)
-22. [C. Subset Multiplication](https://codeforces.com/contest/2124/problem/C)
-23. [Climbing the Grid](/c++/Climbing%20the%20Grid/climbing_grid.cpp)
-24. [Insertion Sort](/c++/Insertion%20Sort/insertion.cpp)
-25. [Merge Sort](/c++/Merge%20Sort/merge_sort.cpp)
-26. [Wood Cutting](/c++/Planks/planks.cpp)
+21. [Binary Search](/c++/Binary%20Search/README.md)
+22. [C. Prefix Min and Suffix Max](https://codeforces.com/contest/2123/problem/C)
+23. [C. Subset Multiplication](https://codeforces.com/contest/2124/problem/C)
+24. [Climbing the Grid](/c++/Climbing%20the%20Grid/climbing_grid.cpp)
+25. [Counting Sort](/c++/Counting%20Sort/countingsort.cpp)
+26. [Cow to the stalls](/c++/Cows%20to%20the%20stalls/README.md)
+27. [Insertion Sort](/c++/Insertion%20Sort/insertion.cpp)
+28. [Merge Sort](/c++/Merge%20Sort/merge_sort.cpp)
+29. [Quick Sort](/c++/Quick%20Sort/quicksort.cpp)
+30. [Square root and square square](/c++/Square%20root%20and%20square%20square/README.md)
+31. [Very Easy Problem](c++/Very%20Easy%20Problem/README.md)
+32. [Wood Cutting](/c++/Planks/planks.cpp)
 
 Feel free to explore the solutions and provide feedback or improvements if you find any!

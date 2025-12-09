@@ -13,7 +13,6 @@ using namespace std;
 
 //Merge without Sentinels
 void merge_without_sentinels(vector<int>::iterator p, vector<int>::iterator q, vector<int>::iterator r) {
-    int infinity = numeric_limits<int>::max();
     int n1 = (q-p);
     int n2 = (r-q);
     
@@ -86,7 +85,13 @@ void merge_sort(vector<int>::iterator begin, vector<int>::iterator end) {
 }
 
 int main() {
-    vector<int> arr = {4, 3, 1, -29, 4, -20, 75, 35, 12, -90, -98, -2, 3};
+    int n;
+    cin >> n;
+
+    vector<int> arr(n);
+    for(int i=0; i<n; i++) {
+        cin >> arr[i];
+    }
     merge_sort(arr.begin(), arr.end());
 
     PRINT(arr);
