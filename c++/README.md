@@ -2,7 +2,7 @@
 
 This folder contains solutions to competitive programming questions implemented in C++.
 
-Number of Solutions: 43
+Number of Solutions: 47
 
 ## Problem Statements
 
@@ -40,14 +40,18 @@ Number of Solutions: 43
 32. [C. Specialty String](https://codeforces.com/contest/2200/problem/C)
 33. [C. Subset Multiplication](https://codeforces.com/contest/2124/problem/C)
 34. [Climbing the Grid](/c++/Climbing%20the%20Grid/climbing_grid.cpp)
-35. [Counting Sort](/c++/Counting%20Sort/countingsort.cpp)
-36. [Cow to the stalls](/c++/Cows%20to%20the%20stalls/README.md)
-37. [D. Portal](https://codeforces.com/contest/2200/problem/D)
-38. [Insertion Sort](/c++/Insertion%20Sort/insertion.cpp)
-39. [Merge Sort](/c++/Merge%20Sort/merge_sort.cpp)
-40. [Quick Sort](/c++/Quick%20Sort/quicksort.cpp)
-41. [Square root and square square](/c++/Square%20root%20and%20square%20square/README.md)
-42. [Very Easy Problem](c++/Very%20Easy%20Problem/README.md)
-43. [Wood Cutting](/c++/Planks/planks.cpp)
+35. [Counting Divisors](https://cses.fi/problemset/task/1713/)
+36. [Counting Sort](/c++/Counting%20Sort/countingsort.cpp)
+37. [Cow to the stalls](/c++/Cows%20to%20the%20stalls/README.md)
+38. [D. Portal](https://codeforces.com/contest/2200/problem/D)
+39. [Insertion Sort](/c++/Insertion%20Sort/insertion.cpp)
+40. [Maximum Subarray Sum](https://cses.fi/problemset/task/1643/)
+41. [Merge Sort](/c++/Merge%20Sort/merge_sort.cpp)
+42. [Quick Sort](/c++/Quick%20Sort/quicksort.cpp)
+43. [Square root and square square](/c++/Square%20root%20and%20square%20square/README.md)
+44. [Subarray Sums I](https://cses.fi/problemset/task/1660/)
+45. [Sum of Two Values](https://cses.fi/problemset/task/1640/)
+46. [Very Easy Problem](c++/Very%20Easy%20Problem/README.md)
+47. [Wood Cutting](/c++/Planks/planks.cpp)
 
 Feel free to explore the solutions and provide feedback or improvements if you find any!
